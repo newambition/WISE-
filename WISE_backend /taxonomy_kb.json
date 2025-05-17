@@ -1,0 +1,276 @@
+{
+    "taxonomy": {
+      "version": "3.1",
+      "description": "Enhanced taxonomy of manipulative tactics with intent qualifiers and contextual factors.",
+      "contextual_factors": [
+        {
+          "factor_name": "Writers Role",
+          "description": "The apparent role of the writer influences the legitimacy of persuasion.",
+          "roles": [
+            "Politician",
+            "Salesperson",
+            "Educator",
+            "Journalist",
+            "Activist",
+            "Religious Leader",
+            "Expert",
+            "Commentator",
+            "Business Leader",
+            "Lobbyist",
+            "Entertainer"
+          ],
+          "example": "A politician's use of tribal framing differs from a community organizer's."
+        },
+        {
+          "factor_name": "Audience's Vulnerability",
+          "description": "Audience susceptibility affects ethical implications.",
+          "vulnerabilities": [
+            "Children",
+            "Elderly",
+            "Crisis Victims",
+            "Low Education",
+            "Mental Health Issues",
+            "Economic Hardship",
+            "Captive Environments",
+            "Social Isolation",
+            "Gullibility"
+          ],
+          "example": "Appeals to fear targeting children are more unethical."
+        }
+      ],
+      "tactics": [
+        {
+          "id": 1,
+          "tactic_name": "Appeal to Hope/Belonging (Solution Framing)",
+          "description": "Presents a particular solution as the only path to a desired future, fostering a sense of hope and belonging among its supporters.",
+          "intent_qualifiers": [
+            "Legitimate Use (positive vision, realistic steps)",
+            "Borderline Manipulation (exaggerated benefits, downplayed challenges)",
+            "Blatant Manipulation (fabricated utopia, dubious cause)"
+          ],
+          "example": "Join us to build a brighter future!"
+        },
+        {
+          "id": 2,
+          "tactic_name": "Appeal to Anger/Grievance",
+          "description": "Evokes anger/grievance to mobilize support.",
+          "intent_qualifiers": [
+            "Legitimate Use (addressing real injustices)",
+            "Borderline Manipulation (exaggerating grievances)",
+            "Blatant Manipulation (fabricating grievances)"
+          ],
+          "example": "They stole our jobs!"
+        },
+        {
+          "id": 3,
+          "tactic_name": "Appeal to Fear",
+          "description": "Evokes fear to influence decision-making.",
+          "intent_qualifiers": [
+            "Legitimate Use (warning about real danger)",
+            "Borderline Manipulation (exaggerating risk)",
+            "Blatant Manipulation (fabricating threats)"
+          ],
+          "example": "If we don't act, we're doomed!"
+        },
+        {
+          "id": 4,
+          "tactic_name": "Argument by Assertion",
+          "description": "Presents a claim as fact without evidence.",
+          "intent_qualifiers": [
+            "Legitimate Use (stating known fact)",
+            "Borderline Manipulation (opinion as fact)",
+            "Blatant Manipulation (false claim as truth)"
+          ],
+          "example": "Everyone knows taxes are too high."
+        },
+        {
+          "id": 5,
+          "tactic_name": "Tribal Framing / In-group Out-group",
+          "description": "Creates group loyalty by emphasizing superiority.",
+          "intent_qualifiers": [
+            "Legitimate Use (promoting group spirit)",
+            "Borderline Manipulation (excluding outsiders)",
+            "Blatant Manipulation (inciting hatred)"
+          ],
+          "example": "We are the true patriots."
+        },
+        {
+          "id": 6,
+          "tactic_name": "Straw Man",
+          "description": "Misrepresents an opponent's argument.",
+          "intent_qualifiers": [
+            "Legitimate Use (summarizing argument)",
+            "Borderline Manipulation (oversimplifying)",
+            "Blatant Manipulation (fabricating argument)"
+          ],
+          "example": "My opponent wants open borders."
+        },
+        {
+          "id": 7,
+          "tactic_name": "Scapegoating",
+          "description": "Blames a group for complex problems.",
+          "intent_qualifiers": [
+            "Legitimate Use (identifying responsible party based on facts)",
+            "Borderline Manipulation (exaggerating blame)",
+            "Blatant Manipulation (shifting blame unfairly)"
+          ],
+          "example": "Immigrants cause economic problems."
+        },
+        {
+          "id": 8,
+          "tactic_name": "Loaded Language",
+          "description": "Uses emotionally charged words.",
+          "intent_qualifiers": [
+            "Legitimate Use (expressing emotion)",
+            "Borderline Manipulation (swaying opinions)",
+            "Blatant Manipulation (inciting hatred)"
+          ],
+          "example": "Bloodthirsty terrorists threaten us."
+        },
+        {
+          "id": 9,
+          "tactic_name": "Omission of Key Information",
+          "description": "Leaves out information to mislead.",
+          "intent_qualifiers": [
+            "Legitimate Use (omitting irrelevant details)",
+            "Borderline Manipulation (selective omission)",
+            "Blatant Manipulation (withholding crucial facts)"
+          ],
+          "example": "This product makes you happy. (without mentioning addictive side effects)"
+        },
+        {
+          "id": 10,
+          "tactic_name": "Framing by Association",
+          "description": "Creates impression by linking ideas or people.",
+          "intent_qualifiers": [
+            "Legitimate Use (valid connections)",
+            "Borderline Manipulation (suggestive associations)",
+            "Blatant Manipulation (false associations)"
+          ],
+          "example": "Our candidate is endorsed by respected leaders."
+        },
+        {
+          "id": 11,
+          "tactic_name": "Gaslighting",
+          "description": "Causes someone to doubt reality.",
+          "intent_qualifiers": [
+            "Legitimate Use (correcting misinformation)",
+            "Borderline Manipulation (subtle distortion)",
+            "Blatant Manipulation (systematic denial)"
+          ],
+          "example": "You're imagining things."
+        },
+        {
+          "id": 12,
+          "tactic_name": "Sealioning",
+          "description": "Harasses by demanding evidence without genuine engagement.",
+          "intent_qualifiers": [
+            "Legitimate Use (seeking clarification)",
+            "Borderline Manipulation (repeatedly demanding evidence)",
+            "Blatant Manipulation (stonewalling discussion)"
+          ],
+          "example": "Prove your point. Why no sources?"
+        },
+        {
+          "id": 13,
+          "tactic_name": "Moral Superiority Framing",
+          "description": "Presents group as inherently more moral.",
+          "intent_qualifiers": [
+            "Legitimate Use (promoting values)",
+            "Borderline Manipulation (implying disagreement lacks morals)",
+            "Blatant Manipulation (demonizing opponents)"
+          ],
+          "example": "We are the party of values."
+        },
+        {
+          "id": 14,
+          "tactic_name": "Cherry Picking",
+          "description": "Selectively presents data that supports a position, ignoring contradictory evidence.",
+          "intent_qualifiers": [
+            "Legitimate Use (highlighting relevant data)",
+            "Borderline Manipulation (selectively presenting data)",
+            "Blatant Manipulation (ignoring contradictory evidence)"
+          ],
+          "example": "Crime rates are falling (ignoring specific types of crime)."
+        },
+        {
+          "id": 15,
+          "tactic_name": "False Dilemma",
+          "description": "Presents only two options, when more exist.",
+          "intent_qualifiers": [
+            "Legitimate Use (simplifying choices)",
+            "Borderline Manipulation (limiting options)",
+            "Blatant Manipulation (creating false choices)"
+          ],
+          "example": "You're either with us, or against us."
+        },
+        {
+          "id": 16,
+          "tactic_name": "Bandwagon Effect",
+          "description": "Encourages people to do something because everyone else is doing it.",
+          "intent_qualifiers": [
+            "Legitimate Use (highlighting trends)",
+            "Borderline Manipulation (exaggerating popularity)",
+            "Blatant Manipulation (faking support)"
+          ],
+          "example": "Everyone's buying this, so should you."
+        },
+        {
+          "id": 17,
+          "tactic_name": "Ad Hominem",
+          "description": "Attacks the person, not the argument.",
+          "intent_qualifiers": [
+            "Legitimate Use (assessing credibility)",
+            "Borderline Manipulation (attacking character)",
+            "Blatant Manipulation (using personal attacks to invalidate argument)"
+          ],
+          "example": "You can't trust him, he's a liar."
+        },
+        {
+          "id": 18,
+          "tactic_name": "Appeal to Authority",
+          "description": "Cites an authority to support a claim.",
+          "intent_qualifiers": [
+            "Legitimate Use (citing relevant experts)",
+            "Borderline Manipulation (citing questionable authorities)",
+            "Blatant Manipulation (citing false authorities)"
+          ],
+          "example": "Experts agree that climate change is a hoax."
+        },
+        {
+          "id": 19,
+          "tactic_name": "Red Herring",
+          "description": "Introduces an irrelevant topic to divert attention.",
+          "intent_qualifiers": [
+            "Legitimate Use (changing subject)",
+            "Borderline Manipulation (introducing tangentially related topics)",
+            "Blatant Manipulation (diverting attention from core issue)"
+          ],
+          "example": "You criticize my policies, but what about your own past?"
+        },
+        {
+          "id": 20,
+          "tactic_name": "Appeal to Tradition",
+          "description": "Argues that something is good because it's always been done that way.",
+          "intent_qualifiers": [
+            "Legitimate Use (respecting tradition)",
+            "Borderline Manipulation (resisting change)",
+            "Blatant Manipulation (using tradition to justify harmful practices)"
+          ],
+          "example": "We've always done it this way."
+        },
+        {
+          "id": 21,
+          "tactic_name": "Affirmation",
+          "description": "Positive statement",
+          "intent_qualifiers": [
+            "Legitimate Use (Encouragement, praise)",
+            "Borderline Manipulation (Inflating to manipulate)",
+            "Blatant Manipulation (False affirmation)"
+          ],
+          "example": "Wow, I got to tell you the energy, the optimism, the enthusiasm that we've got in this room is not something that could be replicated by any other political party in this country..."
+        }
+      ]
+    }
+  }
+  

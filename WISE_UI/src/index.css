@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-body text-lg bg-base-100; /* Apply Raleway font and base background */
+  }
+
+  h2, h3, h4, h5, h6 {
+    @apply font-heading; /* Apply Montserrat as default heading font */
+  }
+
+  /* Removed h1 style as it's handled in the component */
+}
+
+/* Your custom styles below */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-align: left;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom Animations */
+@keyframes modal-appear {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-modal-appear {
+  animation: modal-appear 0.2s ease-out forwards;
+}

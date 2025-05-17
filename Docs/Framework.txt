@@ -1,0 +1,147 @@
+# WISE
+
+This guide outlines the key components and implementation considerations for building WISE
+
+## Core Architecture Components
+
+### Backend (FastAPI)
+
+The backend is built with FastAPI, providing a modern, high-performance API with automatic documentation.
+
+#### Key Components:
+
+1. **Core Analysis Engine** (`backend/app/core/analysis.py`)
+   - Implements the main deconstruction and analysis functionality
+   - Processes text input through LLM with structured prompting
+   - Uses the taxonomy to classify and evaluate persuasive tactics
+
+2. **LLM Integration** (`backend/app/core/llm_client.py`)
+   - Wrapper for LLM API interactions (e.g., with Gemini)
+   - Handles prompt construction and response parsing
+   - Manages API rate limiting and error handling
+
+3. **Taxonomy Data** (`backend/data/taxonomy.json`)
+   - Structured knowledge base of manipulation tactics
+   - Defines categories, legitimate vs. manipulative uses
+   - Used by the LLM for classification and analysis
+
+4. **API Layer** (`backend/app/api/routes.py`)
+   - Endpoints for text analysis
+   - Structured response schemas
+   - Authentication and rate limiting (if needed)
+
+### Frontend (React)
+
+The frontend is built with React and Tailwind CSS, based on the UI examples provided in the documents.
+
+#### Key Components:
+
+1. **Dashboard** (`frontend/src/components/Dashboard.jsx`)
+   - Main interface with tabs for different views
+   - Visualization of analysis results using Recharts
+   - Interactive elements for exploring tactics
+
+2. **Tactic Explorer** (`frontend/src/components/TacticExplorer.jsx`)
+   - Detailed view of identified tactics
+   - Interactive cards for each tactic with explanations
+   - Modal view for deep dives into specific tactics
+
+3. **Analysis Context** (`frontend/src/context/AnalysisContext.jsx`)
+   - State management for analysis results
+   - Caching of previous analyses
+   - Handling loading states and errors
+
+## Implementation Considerations
+
+### LLM Integration
+
+For the LLM component:
+
+```python
+# Example structure for LLM client (backend/app/core/llm_client.py)
+class LLMClient:
+    def __init__(self, api_key, model="gemini-2.0-flash"):
+        self.api_key = api_key
+        self.model = model
+        # Setup client connection
+        
+    async def analyze_text(self, text, taxonomy_data):
+        # Construct prompt with taxonomy data
+        prompt = self._build_analysis_prompt(text, taxonomy_data)
+        
+        # Call LLM API
+        response = await self._call_llm_api(prompt)
+        
+        # Parse structured response
+        analysis_result = self._parse_response(response)
+        
+        return analysis_result
+        
+    def _build_analysis_prompt(self, text, taxonomy_data):
+        # Build structured prompt with taxonomy
+        pass
+        
+    async def _call_llm_api(self, prompt):
+        # Make API call with error handling and retries
+        pass
+        
+    def _parse_response(self, response):
+        # Parse JSON or structured text response
+        pass
+```
+
+### HITL System
+
+For the human-in-the-loop improvement system mentioned in your conversation:
+
+```python
+# Example structure for HITL feedback (backend/app/core/feedback.py)
+class FeedbackProcessor:
+    def __init__(self, db_client):
+        self.db_client = db_client
+        
+    async def process_feedback(self, analysis_id, feedback_data):
+        # Store feedback
+        await self.db_client.store_feedback(analysis_id, feedback_data)
+        
+        # If needed, queue for review
+        if feedback_data.get("requires_review", False):
+            await self.queue_for_expert_review(analysis_id)
+            
+        return {"status": "feedback_received"}
+        
+    async def queue_for_expert_review(self, analysis_id):
+        # Add to expert review queue
+        pass
+```
+
+
+
+## Deployment Considerations
+
+1. **LLM API Costs**: Monitor usage and implement caching where possible
+
+2. **Performance Optimization**:
+   - Implement response caching for identical or similar inputs
+   - Consider running smaller models locally for initial filtering
+
+3. **Security**:
+   - Implement proper authentication for the API
+   - Sanitize inputs to prevent prompt injection attacks
+   - Consider data privacy, especially if storing user inputs
+
+4. **Scaling**:
+   - Use container orchestration (Kubernetes) for production
+   - Implement load balancing for API endpoints
+   - Consider serverless functions for bursty workloads
+
+## Development Roadmap
+
+Based on your conversation, consider implementing in this order:
+
+1. **MVP**: Core analysis engine with basic UI
+2. **Enhancement**: HITL feedback system for continuous improvement
+3. **Extension**: Counter-narrative engine for response strategies
+4. **Expansion**: Additional domain-specific models (health, marketing)
+
+The modular architecture allows for incremental development and testing of each component.

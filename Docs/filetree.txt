@@ -1,0 +1,83 @@
+parse-project/
+├── .env                        # Environment variables (API keys, etc.)
+├── .gitignore                  # Git ignore file
+├── README.md                   # Project documentation
+├── docker-compose.yml          # Docker configuration for development/deployment
+├── requirements.txt            # Python dependencies
+│
+├── backend/
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── main.py             # FastAPI application entry point
+│   │   ├── config.py           # Configuration and settings
+│   │   ├── db.py               # Database connection (if needed)
+│   │   │
+│   │   ├── api/
+│   │   │   ├── __init__.py
+│   │   │   ├── routes.py       # API routes and endpoints
+│   │   │   └── dependencies.py # API dependencies and middleware
+│   │   │
+│   │   ├── core/
+│   │   │   ├── __init__.py
+│   │   │   ├── analysis.py     # Core analysis engine
+│   │   │   ├── llm_client.py   # LLM integration wrapper
+│   │   │   └── prompts.py      # Prompt templates
+│   │   │
+│   │   ├── models/
+│   │   │   ├── __init__.py
+│   │   │   └── schemas.py      # Pydantic models/schemas
+│   │   │
+│   │   └── utils/
+│   │       ├── __init__.py
+│   │       └── helpers.py      # Utility functions
+│   │
+│   ├── data/
+│   │   └── taxonomy.json       # The manipulation tactics taxonomy
+│   │
+│   └── tests/
+│       ├── __init__.py
+│       ├── test_analysis.py    # Test analysis functionality
+│       └── test_api.py         # Test API endpoints
+│
+└── frontend/
+    ├── public/
+    │   ├── index.html          # HTML template
+    │   └── favicon.ico         # Favicon
+    │
+    ├── src/
+    │   ├── index.js            # Entry point
+    │   ├── App.js              # Main React component
+    │   ├── setupTests.js       # Test configuration
+    │   │
+    │   ├── assets/
+    │   │   └── images/         # Static images
+    │   │
+    │   ├── components/
+    │   │   ├── Header.jsx      # Header component
+    │   │   ├── Footer.jsx      # Footer component 
+    │   │   ├── Dashboard.jsx   # Main dashboard
+    │   │   ├── TacticCard.jsx  # Individual tactic display
+    │   │   ├── AnalysisOverview.jsx  # Analysis summary view
+    │   │   ├── TacticExplorer.jsx    # Detailed tactics explorer
+    │   │   └── ProtectYourself.jsx   # Resistance strategies section
+    │   │
+    │   ├── context/
+    │   │   └── AnalysisContext.jsx  # State management for analysis results
+    │   │
+    │   ├── hooks/
+    │   │   └── useAnalysis.js        # Custom hook for analysis API
+    │   │
+    │   ├── services/
+    │   │   └── api.js          # API service for backend communication
+    │   │
+    │   ├── styles/
+    │   │   ├── index.css       # Global styles
+    │   │   └── tailwind.css    # Tailwind CSS imports
+    │   │
+    │   └── utils/
+    │       └── formatters.js   # Utility functions for data formatting
+    │
+    ├── .eslintrc.js            # ESLint configuration
+    ├── package.json            # npm dependencies and scripts
+    ├── tailwind.config.js      # Tailwind CSS configuration
+    └── postcss.config.js       # PostCSS configuration for Tailwind

@@ -1,0 +1,118 @@
+# Tactic Library: Moral Superiority Framing
+
+**(Tactic ID: 13)**
+
+---
+
+### **Tactic Detail View**
+
+* **Clear Definition:** This tactic involves positioning oneself, one's group, or one's viewpoint as inherently more virtuous, ethical, or morally advanced than alternatives. It frames disagreements not as differences of opinion or perspective but as conflicts between right and wrong, good and evil, or moral and immoral positions.
+* **Core Mechanism:** It works by elevating debates from the realm of factual disagreement or competing interests to the realm of moral judgment. By framing an issue in terms of moral superiority, it creates social pressure to conform to the "virtuous" position while implicitly casting those who disagree as morally deficient. This makes it difficult to engage with the actual substance of arguments, as disagreement becomes interpreted as a moral failing rather than a legitimate difference in perspective.
+
+---
+
+### **Intent Spectrum Explained**
+
+* **Legitimate Use:**
+    * **Description:** Grounding arguments in sincere ethical principles while acknowledging complexity. Making explicit moral reasoning that genuinely informs a position. Appealing to shared values while respecting that others may weigh different ethical considerations. Advocating for positions with moral implications while avoiding personal condemnation of those who disagree.
+    * **Example:** An environmental advocate explaining the ethical framework behind their position. *"I believe we have a responsibility to future generations to address climate change. While I understand there are economic concerns about rapid transitions, my position is guided by the principle that preventing harm to vulnerable populations should be given significant ethical weight in our decisions."* [Cite: 1.1]
+
+* **Borderline Manipulation:**
+    * **Description:** Implying moral superiority without engaging with opposing ethical frameworks. Using virtue signaling to gain social advantage. Framing complex issues with mixed ethical considerations as simple moral choices. Subtly suggesting that disagreement indicates character flaws rather than different values or priorities.
+    * **Example:** A political commentator implying that only their side cares about important values. *"People who truly care about families and children obviously support our policy. The other side might claim to have different priorities, but when you really look at it, they simply don't share our fundamental commitment to protecting the vulnerable."* [Cite: 1.2]
+
+* **Blatant Manipulation:**
+    * **Description:** Explicitly claiming exclusive moral authority or virtue. Dehumanizing or demonizing those with different viewpoints. Using moral righteousness to shut down debate or justify harmful actions. Creating false moral dichotomies where nuanced positions exist. Weaponizing ethical language to attack opponents rather than address issues.
+    * **Example:** A social media influencer denouncing anyone questioning their position. *"Only truly good people support this cause. If you disagree with any aspect of our approach, you're not just wrong—you're actively supporting evil. There are no legitimate reasons for opposition; anyone who disagrees is simply revealing their moral corruption and doesn't deserve a platform."* [Cite: 1.3]
+
+---
+
+### **Common Scenarios**
+
+* **Political Discourse:** Parties or ideological groups positioning themselves as the exclusive champions of justice, freedom, compassion, or other virtues, while portraying opponents as fundamentally lacking these qualities (e.g., "We're the only ones who truly care about working families"). [Cite: 2.1]
+* **Social Media Activism:** Online movements that frame participation or agreement as moral imperatives, equating scrutiny or nuanced positions with opposition to the underlying values (e.g., "If you're not visibly supporting this cause, you're part of the problem"). [Cite: 2.2]
+* **Religious or Ideological Communities:** Groups that claim exclusive moral authority or special insight, positioning members as more enlightened, conscious, or virtuous than non-members (e.g., "Only we understand the true path to righteousness"). [Cite: 2.3]
+* **Corporate Messaging:** Organizations positioning their products, services, or practices as ethically superior choices, implying that consumers who choose alternatives are making morally questionable decisions (e.g., "Conscious consumers choose our brand"). [Cite: 2.4]
+* **Cultural Criticism:** Reviews or commentary that frames certain cultural tastes or preferences as morally superior rather than subjectively different (e.g., "People with refined sensibilities appreciate this art form").
+
+---
+
+### **Related Cognitive Biases**
+
+* **Moral Licensing:** The tendency to feel entitled to make morally questionable choices after previous "good" behavior. Those who frequently engage in moral superiority framing may paradoxically feel permitted to act unethically in other contexts. [Cite: 3.1]
+* **Naive Realism:** The belief that we see objective reality clearly while others who disagree are biased. This facilitates moral superiority framing by making it easy to attribute disagreement to others' moral failings rather than different perspectives. [Cite: 3.2]
+* **Fundamental Attribution Error:** The tendency to overestimate the role of character and underestimate situational factors when explaining others' behavior. This supports moral superiority framing by attributing disagreement to others' flawed character rather than their circumstances or legitimate concerns. [Cite: 3.3]
+* **Illusion of Moral Superiority:** The tendency to believe that one's own moral character is better than average. This makes people susceptible to messages that confirm their pre-existing sense of moral elevation. [Cite: 3.4]
+
+---
+
+### **"How to Spot It" Checklist**
+
+* [_] Does the message frame disagreement as a moral failing rather than a different perspective?
+* [_] Is complex ethical reasoning reduced to simplistic good-versus-evil narratives?
+* [_] Are those who disagree portrayed as not just wrong but somehow morally deficient?
+* [_] Does the message claim exclusive ownership of virtues that most people across perspectives would value?
+* [_] Is virtue signaling used to gain social status rather than to advance substantive discussion?
+* [_] Are moral claims being used to shut down debate rather than engage with counterarguments?
+* [_] Does the framing make it socially costly to express legitimate questions or alternative viewpoints?
+
+---
+
+### **Detailed Resistance Strategies**
+
+1. **Separate Moral Claims from Factual/Practical Claims:**
+   * When encountering moral superiority framing, explicitly distinguish between factual claims (what is), practical claims (what works), and moral claims (what should be).
+   * Ask: "Setting aside for a moment which approach is more virtuous, what evidence exists that this approach will achieve the desired outcome?" [Cite: 4.1]
+
+2. **Recognize Multiple Moral Frameworks:**
+   * Understand that reasonable people can hold different ethical frameworks (utilitarian, deontological, virtue ethics, care ethics, etc.) that lead to different conclusions.
+   * Consider whether disagreement might reflect different moral priorities rather than the presence or absence of moral concern. [Cite: 4.2]
+
+3. **Look for Moral Complexity:**
+   * Be skeptical of framing that presents complex issues as simple moral choices without acknowledging competing ethical considerations.
+   * Ask: "What valid moral concerns might exist on multiple sides of this issue?" [Cite: 4.3]
+
+4. **Identify Virtue Signaling:**
+   * Distinguish between substantive moral reasoning and performative displays of virtue meant primarily to establish social status.
+   * Consider whether moral language is being used to advance understanding or to gain social advantage. [Cite: 4.4]
+
+5. **Practice Perspective-Taking:**
+   * Actively try to understand the moral reasoning of those with different viewpoints, even if you ultimately disagree.
+   * Ask: "What values or concerns might motivate someone to hold this position in good faith?" [Cite: 4.5]
+
+6. **Engage with Principles Rather Than Labels:**
+   * When discussing morally charged issues, focus on specific principles and reasoning rather than accepting broad moral categorizations.
+   * Request clarification: "Could you explain the specific ethical principle that leads to that conclusion?" [Cite: 4.6]
+
+7. **Maintain Intellectual Humility:**
+   * Recognize that moral certainty can lead to closed-mindedness and an inability to consider valid alternative perspectives.
+   * Remember that moral understanding evolves over time, both individually and collectively, requiring openness to reconsideration. [Cite: 4.7]
+
+---
+
+### **Link to Interactive Simulation/Exercise**
+
+* **(Placeholder):** [Link to "Ethical Reasoning vs. Moral Superiority" Interactive Exercise] - *Explore the difference between substantial ethical arguments and moral superiority framing across various contemporary issues.*
+
+---
+
+### Links for Citations
+
+Cite 1.1: https://www.nature.com/articles/s41558-020-0798-9 (Climate ethics and ethical communication)
+Cite 1.2: https://journals.sagepub.com/doi/10.1177/0956797617741719 (Moral grandstanding in public discourse)
+Cite 1.3: https://link.springer.com/article/10.1007/s11211-020-00375-4 (Moral polarization and intolerance of opposing views)
+Cite 2.1: https://www.jstor.org/stable/24562311 (Moral foundations in political communication)
+Cite 2.2: https://journals.sagepub.com/doi/10.1177/2056305120944398 (Performative activism and social media)
+Cite 2.3: https://www.jstor.org/stable/20749134 (Religious exclusivity and moral authority claims)
+Cite 2.4: https://www.sciencedirect.com/science/article/abs/pii/S0148296319306763 (Ethical consumption and consumer identity)
+Cite 3.1: https://www.sciencedirect.com/science/article/abs/pii/S0022103113000668 (Moral licensing and behavioral ethics)
+Cite 3.2: https://psycnet.apa.org/record/1996-01714-001 (Naive realism in everyday life)
+Cite 3.3: https://psycnet.apa.org/record/1977-25733-001 (Fundamental attribution error in moral judgment)
+Cite 3.4: https://journals.sagepub.com/doi/10.1177/1948550616673878 (Self-enhancement on perceived moral character)
+Cite 4.1: https://journals.sagepub.com/doi/10.1177/1745691617693393 (Factual knowledge and moral judgment)
+Cite 4.2: https://plato.stanford.edu/entries/moral-pluralism/ (Moral Pluralism - Stanford Encyclopedia of Philosophy)
+Cite 4.3: https://psycnet.apa.org/record/2013-02547-001 (Integrative complexity in moral reasoning)
+Cite 4.4: https://journals.sagepub.com/doi/10.1177/0963721420969364 (Signal and signaling in social interaction)
+Cite 4.5: https://journals.sagepub.com/doi/10.1177/0022022117730982 (Perspective-taking across moral divides)
+Cite 4.6: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6166987/ (Constructive dialogue across moral divides)
+Cite 4.7: https://journals.sagepub.com/doi/10.1177/1745691610393525 (Intellectual humility and moral reasoning)
