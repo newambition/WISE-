@@ -9,7 +9,7 @@
 
 ---
 
-WISE is built for those who need it — and anyone who wants to better recognize common patterns of manipulation in written language. It's designed to empower individuals by making the strategies behind persuasive messages more transparent.
+WISE is built for ethose who want to better recognize common patterns of manipulation in written content, wether news articles, social media posts, health blogs or even a batch of private messages.  It's designed to empower individuals by making the strategies behind persuasive messages more transparent.
 
 🔗 **Try it now: [Live Demo](https://wise-ga5e.onrender.com)**
 
@@ -52,17 +52,25 @@ Getting started with WISE is straightforward:
 
 ## ❤️ The Story Behind WISE: Why This Exists
 
-I built WISE because I've seen what happens when good people are gradually guided into belief systems they didn't consciously choose. I've personally experienced the effects of malicious persuasion, without realising it was happening.
+I built WISE because I've seen what happens when people are guided into belief systems they didn't consciously choose. 
 
-I created what I wished existed when I needed it most.
+I've personally experienced the effects of malicious persuasion, without realising it was happening.  
 
-I didn't want another tool that simply labels content "good" or "bad." Instead, WISE helps you see the strategies behind the message—like having X-ray vision for persuasion techniques. Everyone deserves to know when their thinking is being deliberately directed.
+**I created what I wished existed when I needed it most**
 
-Many people encounter covert manipulation in everyday language — online, in media, or in personal relationships. WISE is designed as a clear, accessible tool to help spot those tactics quickly and build awareness.
+I didn't want another tool that simply labels content "good" or "bad." 
+
+Instead, WISE helps you see the strategies behind the message—like having X-ray vision for persuasion techniques. 
+
+Everyone deserves to know when their thinking is being deliberately directed.
+
+Many people encounter covert manipulation in everyday language — online, in media, or in personal relationships. 
+
+WISE is designed as a clear, accessible tool to help spot those tactics quickly and build awareness.
 
 WISE isn't about profit margins or user growth. It's about helping people think more clearly in a noisy world.
 
-If it helps even a handful of people feel more confident in their own judgment and less confused by conflicting messages—that's success.
+If it helps even a handful of people feel more confident in their own judgment and less confused by conflicting messages—that's success,
 
 Because everyone deserves to see how persuasion works before deciding what to believe.
 
