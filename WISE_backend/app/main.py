@@ -23,7 +23,7 @@ app = FastAPI(title="GenAI Analysis API")
 # Define the list of origins that are allowed to make requests.
 origins = [
     "http://localhost:3000",  # For local React dev server
-    "https://your-deployed-frontend.com",  # <<< REPLACE THIS WITH YOUR ACTUAL DEPLOYED FRONTEND URL
+    "https://api.render.com/deploy/srv-d0k0pod6ubrc73as2irg?key=5j6qVtDhUZM",  # <<< REPLACE THIS WITH YOUR ACTUAL DEPLOYED FRONTEND URL
     # e.g., "https://wise-app.netlify.app" or "https://my-wise-instance.com"
 ]
 
