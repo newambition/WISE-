@@ -1,6 +1,6 @@
 <div align="center">
 
-  ' -->
+  
   # **WISE**
 
   **A lightweight tool to help users identify manipulative tactics in text-based content.**
@@ -9,7 +9,7 @@
 
 ---
 
-WISE is built for ethose who want to better recognize common patterns of manipulation in written content, wether news articles, social media posts, health blogs or even a batch of private messages.  It's designed to empower individuals by making the strategies behind persuasive messages more transparent.
+WISE is built for those who want to better recognize common patterns of manipulation in written content, wether news articles, social media posts, health blogs or even a batch of private messages.  It's designed to empower individuals by making the strategies behind persuasive messages more transparent.
 
 🔗 **Try it now: [Live Demo](https://wise-ga5e.onrender.com)**
 
@@ -23,7 +23,6 @@ WISE offers a focused approach to analyzing text-based content:
 
 * **Tactic Identification**: Analyzes text for common manipulative tactics.
 * **User-Controlled AI**: Uses your own Google Generative Language API key.
-    * _No server-side AI processing of your content._
     * _No data collection or logging of your text or API key by the WISE application._
 * **Secure Key Storage**: Implements a simple local passphrase vault to encrypt and store your API key directly in your browser.
 
@@ -36,7 +35,7 @@ It's important to understand the scope of WISE:
 * **Not a Substitute for Professional Judgment**: It's an aid for awareness, not a replacement for expert advice or critical thinking.
 * **No Data Storage**:
     * Your API key is *not* stored on any server.
-    * All file content and analysis processing occur client-side; nothing is uploaded or logged by the WISE application.
+    * All file content is not saved or logged, only being direclty passed to the model provider via backend
 
 ## 🚀 How to Use It
 
