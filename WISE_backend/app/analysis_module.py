@@ -2,9 +2,8 @@ import os
 import json
 import asyncio
 from google import genai
-# import genai.types # Keep removed
-import xml.etree.ElementTree as ET # Keep for now
-from pydantic import BaseModel, Field, ValidationError # Added ValidationError for potential future use
+import xml.etree.ElementTree as ET #
+from pydantic import BaseModel, Field, ValidationError 
 from typing import List, Optional, Union
 from collections import defaultdict
 
@@ -40,18 +39,6 @@ except json.JSONDecodeError:
     print(f"Warning: Could not decode taxonomy_kb.json at {taxonomy_path}. File might be corrupted.")
     taxonomy = {}
 
-# REMOVED global API key loading and global client initialization:
-# api_key = os.getenv("GEMINI_API_KEY")
-# if not api_key:
-#     raise ValueError("GEMINI_API_KEY environment variable not set.")
-# try:
-#     client = genai.Client(api_key=api_key)
-# except Exception as e:
-#     print(f"Error initializing GenAI client: {e}")
-#     client = None
-#     raise AnalysisError(f"Failed to initialize GenAI client: {e}") from e
-
-# Pydantic model definitions that were here are now imported from app.models.
 
 async def run_wise(file_content: str, user_api_key: str) -> dict:
     """
@@ -63,7 +50,6 @@ async def run_wise(file_content: str, user_api_key: str) -> dict:
         raise AnalysisError("API key was not provided for GenAI client initialization.")
 
     try:
-        # Initialize client here with the user's key for this specific request
         current_request_client = genai.Client(api_key=user_api_key)
         print("GenAI client initialized successfully with user-provided key for this request.")
     except Exception as e:
@@ -71,20 +57,9 @@ async def run_wise(file_content: str, user_api_key: str) -> dict:
         raise AnalysisError(f"Failed to initialize GenAI client with the provided API key. Please check the key. Original error: {e}") from e
 
     print("Running WISE analysis (async)... requesting structured JSON...")
-    # Ensure model_name is defined, e.g., from constants or directly
-    model_name = "models/gemini-1.5-flash-latest" # Using a common model, adjust if needed, or get from constants.py
-                                               # Original was "models/gemini-2.0-flash" which might not be standard.
-                                               # Let's use "models/gemini-1.5-flash-latest" as a common valid one.
-                                               # Or use "gemini-1.5-flash-latest" if "models/" prefix is not needed by this client.
-                                               # The Google AI Studio usually shows "gemini-1.5-flash-latest".
-                                               # The API often uses "models/gemini-1.5-flash-latest"
-                                               # Let's stick to the original user's "models/gemini-2.0-flash" if that was intended and valid for them.
-                                               # For safety and to match original, I'll use what was there:
-    model_name = "models/gemini-2.0-flash" # As per original code in analysis_module
+    model_name = "models/gemini-2.0-flash" 
 
     # Prompt content (ensure constants are loaded if these strings are moved to constants.py)
-    # For now, keeping them embedded for simplicity in this change.
-    # Ideally, these large prompt strings should be in constants.py
     contents = [ "Persona: Informed Persuasion Analyst",
         f"Objective: Deconstruct and analyse the following text to detect and distinguish between legitimate persuasion vs purposeful manipulation:\n--- START TEXT ---\n{file_content}\n--- END TEXT ---",
         "Process (Chain-of-Thought):",
@@ -107,7 +82,6 @@ async def run_wise(file_content: str, user_api_key: str) -> dict:
         "Intent: 'Legitimate Use,' 'Borderline Manipulation,' or 'Blatant Manipulation.' Justify this classification.",
         "Explanation: Explain how the tactic is being used and why it falls into the chosen Intent category.",
         "resistanceStrategy: How to recognize and resist the tactic.",
-        "If Applicable Fact checking sources: Up to 3 URLs for sources that directly disprove or challenge claims. Only include URLs from highly reputable sources (e.g., government agencies, academic institutions, established news organisations with strong fact-checking policies). Provide a very short description of what each source says.",
         "Output Format: IMPORTANT - Adhere strictly to the requested JSON schema.",
         "Specifically, provide the results for 'metadata', 'executive_summary', 'intentBreakdown', 'overall_assessment', 'tactics', and 'detailed_report_sections'.",
         "For 'metadata.confidenceScore', provide a single number between 0 and 100.",
@@ -159,12 +133,16 @@ async def run_wise(file_content: str, user_api_key: str) -> dict:
                 
                 result_data['manipulationByCategory'] = manipulation_by_category_list
                 # -----------------------------------------------------------------
-                
-                # Optionally, validate the final structure (including manipulationByCategory)
-                # final_validated_result = FinalAnalysisResult.model_validate(result_data)
-                # print("Backend processing complete.")
-                # return final_validated_result.model_dump()
-                
+
+                # --- Only keep confidenceScore in metadata as string ---
+                meta = result_data.get('metadata', {})
+                score = meta.get('confidenceScore')
+                if score is not None:
+                    result_data['metadata']['confidenceScore'] = str(score)
+                else:
+                    result_data['metadata']['confidenceScore'] = ""
+                # -----------------------------------------------------------------
+
                 print("Backend processing complete.")
                 return result_data # Return the dict
 

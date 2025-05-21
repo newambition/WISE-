@@ -45,7 +45,6 @@ PROMPT_PROCESS_STEPS = [
     "4.  Infer Author's Intent: Based on the above factors, determine the author's likely intent: Primarily to inform/persuade rationally, or primarily to manipulate/deceive? Provide a confidence score (as a number 0-100) for this assessment.",
     "5. Identify Factual Claims: Scrutinise the text for specific, verifiable factual claims (e.g., statistics, dates, events). Prioritise claims that are central to the speaker's argument or that seem questionable.",
     "6. Identify grounded and ethical resistance strategies for each identified tactic.",
-    "7. If the text is making unsubstantiated claims of fact, or twisting facts to strengthen an identified tactic:  use web search to source evidence that either directly disproves or challenges such claims, choose the (maximum) 3 most relevant and trustworthy sources to provide the URL of in the output, use shortened Bit.ly style URL's"
 ]
 PROMPT_IMPLEMENTATION_HEADER = "Implementation (Directional-Stimulus Prompting):"
 PROMPT_IMPLEMENTATION_DETAILS = [
@@ -60,7 +59,6 @@ PROMPT_IMPLEMENTATION_DETAILS = [
     f"Intent: '{INTENT_LEGITIMATE},' '{INTENT_BORDERLINE},' or '{INTENT_BLATANT}.' Justify this classification.", # Note: Intent field renamed in models
     "Explanation: Explain how the tactic is being used and why it falls into the chosen Intent category.",
     "resistanceStrategy: How to recognize and resist the tactic.", # Note: resistanceStrategy field renamed in models
-    "If Applicable Fact checking sources: Up to 3 URLs for sources that directly disprove or challenge claims. Only include URLs from highly reputable sources (e.g., government agencies, academic institutions, established news organisations with strong fact-checking policies). Provide a very short description of what each source says."
 ]
 PROMPT_OUTPUT_HEADER = "Output Format: IMPORTANT - Adhere strictly to the requested JSON schema."
 PROMPT_OUTPUT_DETAILS = [

@@ -13,19 +13,18 @@ except ImportError:
     print("WARNING: python-docx not installed. .docx file support is disabled.")
     print("Install it with: pip install python-docx")
 
-# Import the analysis function and custom error from our module
+# Import the analysis function and custom error 
 from app.analysis_module import run_wise, AnalysisError 
 
-# Create the FastAPI application instance
+# Create FastAPI app instance
 app = FastAPI(title="GenAI Analysis API")
 
 # --- CORS Configuration ---
 # Define the list of origins that are allowed to make requests.
-# IMPORTANT: Ensure your deployed frontend URL (e.g., "https://get-wise.life") is in this list.
 origins = [
     "http://localhost:3000",  # For local React dev server
-    "https://wise-ga5e.onrender.com",  # <<< REPLACE THIS WITH YOUR ACTUAL DEPLOYED FRONTEND URL
-    # e.g., "https://get-wise.life" if that's your frontend URL
+    "https://wise-ga5e.onrender.com", # For deployed React app
+    "https://get-wise.life", # For deployed React app
 ]
 
 app.add_middleware(
@@ -105,9 +104,9 @@ app.include_router(api_router)
 # --- End API Router Setup ---
 
 # --- Static Files Mounting (after API router) ---
-# This serves your React frontend.
-# Ensure 'static_dir' points to your React app's build folder (e.g., 'build' or 'dist')
-# The user prompt specified "/static inside WISE_backend"
+# Serves React frontend.
+# Ensure 'static_dir' points to React app's build folder (e.g., 'build' or 'dist')
+# The user prompt specified "/static" inside WISE_backend
 static_dir_name = "static" 
 static_dir_path = os.path.join(os.path.dirname(__file__), static_dir_name)
 
@@ -115,4 +114,3 @@ if os.path.exists(static_dir_path):
     app.mount("/", StaticFiles(directory=static_dir_path, html=True), name="static_frontend")
 else:
     print(f"Warning: Static directory '{static_dir_path}' not found. Frontend will not be served by FastAPI.")
-# --- End Static Files Mounting ---

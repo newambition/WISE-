@@ -18,7 +18,6 @@ class Metadata(BaseModel):
 
 class ExecutiveSummary(BaseModel):
     primary_intent: str = Field(..., description="Overall assessed intent")
-    confidence_score: str = Field(..., description="Confidence score as a string (as per API)")
     tactic_density: str = Field(..., description="Density of tactics")
     dominant_tactics: str = Field(..., description="Most prominent tactics used")
     structural_bias: str = Field(..., description="Underlying biases in the text's structure")
@@ -44,7 +43,7 @@ class Tactic(BaseModel):
     quote: str = Field(..., description="Specific text excerpt where the tactic is used")
     explanation: str = Field(..., description="Explanation of how the tactic is used and classified")
     resistanceStrategy: str = Field(..., description="How to recognize and resist the tactic")
-    sources: Optional[str] = Field(None, description="Shortened URL's of sources used to justify the tactic") # Made optional
+    
 
 class DetailedReportSections(BaseModel):
     confidence_levels_discussion: str = Field(...)
